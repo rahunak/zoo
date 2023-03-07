@@ -1,0 +1,172 @@
+.backstage {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.backstage__wrapper {
+    margin: 140px 13.75vw 108px 13.6875vw;
+    display: flex;
+    column-gap: 86px;
+}
+.backstage__image {
+    position: relative;
+    left: -1px;
+    height: 403px;
+    width: 609px;
+    background-image: url(../images/bamboo-cap.png);
+}
+.description {
+    width: 465px;
+    display: flex;
+    flex-direction: column;
+}
+.description_text {
+    color: #333b41;
+    font-family: Roboto-400;
+    font-weight: 400;
+}
+.description__title {
+    //styleName: h2;
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.description__title_text {
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.description__subtitle {
+    font-size: 24px;
+
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 54px;
+    margin-bottom: 34px;
+}
+.description__subtitle_text {
+    //styleName: body;
+
+    font-size: 16px;
+
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.flower_foto1 {
+    height: 605px;
+    width: 204px;
+
+    position: absolute;
+    right: 0px;
+    top: 12px;
+    background-image: url(../images/flower_foto1.png);
+    background-repeat: no-repeat;
+}
+@media (max-width: 1599px) {
+    .backstage__wrapper {
+        margin: 109px 30px 135px 30px;
+        display: flex;
+        column-gap: 31px;
+    }
+    .backstage__image {
+        background-position-x: -81px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 455px;
+        height: 408px;
+        left: 0px;
+    }
+    .description {
+        width: 454px;
+        position: relative;
+        top: -10px;
+    }
+    .flower_foto1 {
+        display: none;
+    }
+}
+
+@media (max-width: 999px) {
+    .backstage__image {
+        display: none;
+    }
+
+    .backstage {
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .backstage__wrapper {
+        margin: 69px 30px 72px 23px;
+    }
+    .description {
+        width: 495px;
+    }
+    .description__title_text {
+        margin: 1px 41px 0 -3px;
+    }
+    .description__subtitle {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .description__subtitle_text {
+        margin-left: -3px;
+    }
+    .flower_foto1 {
+        display: block;
+        height: 480px;
+        width: 231px;
+        right: -100px;
+        top: -4px;
+        background-size: contain;
+    }
+}
+@media (max-width: 639px) {
+    .description {
+        max-width: 320px;
+        top: 0;
+    }
+    .backstage__wrapper {
+        margin: 0;
+        margin-top: 105px;
+        margin-left: 10px;
+        margin-bottom: 40px;
+    }
+    .backstage__image {
+        display: none;
+    }
+    .description__title {
+        font-size: 24px;
+        line-height: 120%;
+        margin-bottom: 9px;
+    }
+    .description__title_text {
+        margin: 0px 11px 0 2px;
+    }
+    .description__subtitle {
+        margin: 20px 0 10px 2px;
+    }
+    .description__subtitle_text {
+        margin: 0;
+        margin-right: 10px;
+        font-size: 16px;
+        line-height: 138%;
+        width: 300px;
+    }
+    .flower_foto1 {
+        display: block;
+        width: 105px;
+        height: 217px;
+        right: -73px;
+        top: 39px;
+        background-size: contain;
+    }
+}

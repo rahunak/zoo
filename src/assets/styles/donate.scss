@@ -1,0 +1,899 @@
+//todo сделать раскраску инпута и сабмита
+.donate__head_image {
+    height: 386px;
+    background-image: url(../images/Giant\ Panda.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.donate {
+    padding: 40px 220px;
+    height: 1482px;
+    background: linear-gradient(
+            315.75deg,
+            rgba(254, 210, 144, 0.7) 30.06%,
+            #febdab 100.95%,
+            rgba(254, 210, 144, 0.7) 106.36%
+        ),
+        linear-gradient(
+            315.75deg,
+            rgba(254, 189, 171, 0.74) 30.06%,
+            rgba(243, 169, 248, 0.66) 50.74%,
+            #e0d8f0 80.49%,
+            #eaf7fe 127.9%,
+            #eaf7fe 149.54%
+        ),
+        linear-gradient(
+            315.75deg,
+            rgba(254, 189, 171, 0.74) 30.06%,
+            rgba(243, 169, 248, 0.66) 50.74%,
+            #e0d8f0 80.49%,
+            #eaf7fe 127.9%,
+            #eaf7fe 149.54%
+        );
+}
+
+.donate__title {
+    margin-bottom: 10px;
+    font-family: "Roboto-400";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 130%;
+    /* identical to box height, or 47px */
+
+    color: #ffffff;
+}
+.donate__subtitle {
+    font-family: "Roboto-400";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    /* or 22px */
+
+    color: #ffffff;
+}
+.subtitle__text__bolder {
+    font-family: Roboto-500;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22.4px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.crazy_text {
+    position: relative;
+    left: 4px;
+}
+.donate__information {
+    font-family: "Roboto-400";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 130%;
+    /* identical to box height, or 47px */
+
+    /* or3 */
+
+    color: #fe9013;
+    margin-top: 45px;
+    margin-bottom: 60px;
+}
+.instruction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 92px;
+    padding: 40px 7.931%; //пробуем проценты
+
+    height: 964px;
+    // width: 1160px;
+    background: rgba(255, 255, 255, 0.52);
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+}
+
+.instruction__title {
+    //styleName: h2;
+    position: relative;
+    left: -6px;
+    font-family: Roboto-400;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 58px;
+    letter-spacing: 0em;
+
+    color: #fe9013;
+}
+.instruction__subtitle {
+    align-self: flex-start;
+    font-family: "Roboto-400";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    /* identical to box height, or 29px */
+
+    color: #333b41;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+//---------------shema-----------
+.shema {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 5px;
+}
+
+.diet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 11px;
+    position: relative;
+    left: -23px;
+    top: 28px;
+}
+.amount {
+    font-family: Roboto-500;
+    font-size: 72px;
+    font-weight: 500;
+    line-height: 58px;
+    letter-spacing: 0em;
+}
+.another__amount__dollar {
+    position: absolute;
+    bottom: 17px;
+    right: 25px;
+    fill: #929699;
+}
+.diet_text {
+    //styleName: body;
+    font-family: Roboto-400;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+}
+.muliply {
+    position: relative;
+    top: -14px;
+    background-image: url(../images/svg/x_icon.svg);
+    background-size: cover;
+    width: 14px;
+    height: 14px;
+    margin-left: 11px;
+    margin-right: 40px;
+    position: relative;
+    left: -23px;
+    top: 15px;
+}
+.widget {
+    height: 246px;
+    width: 284px;
+}
+//-----------------
+.another__amount__container {
+    position: relative;
+}
+
+.donate__amount {
+    align-self: flex-start;
+    font-family: "Roboto-400";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    /* or 22px */
+
+    color: #000000;
+    margin-top: 48px;
+    margin-bottom: 17px;
+}
+.progress_bar {
+    padding: 0 1.33%;
+    min-height: 27px;
+    min-width: 976px;
+    width: 84.137931%;
+    background: #404950;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+}
+.progress_bar_line {
+    position: absolute;
+    z-index: -1;
+
+    width: 94.262295%;
+    height: 2px;
+    margin: 0 1.33%;
+    background: #72828e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.progress_bar_circle {
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    position: relative;
+    z-index: 3;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:nth-child(n + 1) {
+        .price {
+            top: -9px;
+            left: -29px;
+        }
+    }
+    &:nth-child(n + 4) {
+        .price {
+            top: -9px;
+            left: -29px;
+        }
+    }
+    &:nth-child(n + 7) {
+        .price {
+            top: -9px;
+            left: -33px;
+        }
+    }
+}
+
+.progress_bar_circle_dot {
+    display: block;
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+}
+.radioButton {
+    display: none; //last--------------------------
+}
+// ------------active-----------
+.bar_circle_outher1 {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    outline: #fe9013 1px solid;
+    position: absolute;
+}
+.bar_circle_outher2 {
+    position: absolute;
+    border-radius: 50%;
+    width: 20.95px;
+    height: 20.95px;
+    outline: #fe9013 1px solid;
+}
+
+#radio1:checked ~ .progress_bar .progress_bar_line .progress_bar_circle .btn1 {
+    .price {
+        color: #fe9013;
+        .dollar_icon {
+            fill: #fe9013;
+        }
+    }
+}
+#radio2:checked ~ .progress_bar .progress_bar_line .progress_bar_circle .btn2 {
+    .price {
+        color: #fe9013;
+        .dollar_icon {
+            fill: #fe9013;
+        }
+    }
+}
+#radio3:checked ~ .progress_bar .progress_bar_line .progress_bar_circle .btn3 {
+    .price {
+        color: #fe9013;
+        .dollar_icon {
+            fill: #fe9013;
+        }
+    }
+}
+#radio4:checked ~ .progress_bar .progress_bar_line .progress_bar_circle .btn4 {
+    .price {
+        color: #fe9013;
+        .dollar_icon {
+            fill: #fe9013;
+        }
+    }
+}
+#radio5:checked ~ .progress_bar .progress_bar_line .progress_bar_circle .btn5 {
+    .price {
+        color: #fe9013;
+        .dollar_icon {
+            fill: #fe9013;
+        }
+    }
+}
+#radio6:checked ~ .progress_bar .progress_bar_line .progress_bar_circle .btn6 {
+    .price {
+        color: #fe9013;
+        .dollar_icon {
+            fill: #fe9013;
+        }
+    }
+}
+#radio7:checked ~ .progress_bar .progress_bar_line .progress_bar_circle .btn7 {
+    .price {
+        color: #fe9013;
+        .dollar_icon {
+            fill: #fe9013;
+        }
+    }
+}
+#radio8:checked ~ .progress_bar .progress_bar_line .progress_bar_circle .btn8 {
+    .price {
+        color: #fe9013;
+        .dollar_icon {
+            fill: #fe9013;
+        }
+    }
+}
+.dollar_icon {
+    width: 10px;
+    height: 20px;
+    fill: #333b41;
+}
+.bar {
+    display: block;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -15px;
+    left: -15px;
+}
+
+.bar_circle_outher {
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #ffee2e;
+    border-radius: 50%;
+}
+.price {
+    position: relative;
+    top: -9px;
+    left: -19px;
+    width: 57px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2px;
+    font-family: "Roboto-500";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 140%;
+    /* or 36px */
+    margin-right: 59px;
+    text-transform: uppercase;
+
+    color: #333b41;
+    &:nth-child(n + 1) {
+        margin-right: 58px;
+    }
+    &:nth-child(n + 3) {
+        margin-right: 60px;
+    }
+    &:nth-child(n + 4) {
+        margin-right: 73px;
+    }
+    &:nth-child(n + 6) {
+        margin-right: 75px;
+    }
+    &:nth-child(n + 7) {
+        margin-right: 88px;
+    }
+}
+.progress_bar_circle:nth-child(1) .price {
+    width: 74px;
+}
+.progress_bar_circle:nth-child(2) .price {
+    width: 74px;
+}
+.progress_bar_circle:nth-child(3) .price {
+    width: 74px;
+}
+
+.another__amount {
+    position: relative;
+    left: 14px;
+    top: -1px;
+    padding: 16px 9px;
+    margin-top: 98px;
+    height: 54px;
+    width: 268px;
+    border-radius: 2px;
+    font-family: "Roboto-400";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    /* or 22px */
+
+    color: #929699;
+    background-color: transparent;
+    border: 1px solid #929699;
+    border-radius: 2px;
+    &:focus-visible {
+        color: #4b9200;
+        border: 1px solid #4b9200;
+    }
+}
+.pay {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    column-gap: 50px;
+    position: relative;
+    left: -7px;
+}
+.payment_block {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+%payment_circle {
+    margin-right: 10px;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+
+    border: 1px solid #fe9013;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.payment_circle1 {
+    @extend %payment_circle;
+}
+.payment_circle2 {
+    @extend %payment_circle;
+}
+.payment_text {
+    font-family: "Roboto-400";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #333b41;
+}
+#monthly:checked ~ .payment_block .payment_circle1 {
+    border: 1px solid #4b9200;
+    .payment_circle_inner {
+        display: block;
+        width: 16px;
+        height: 16px;
+        background-color: #fe9013;
+        border-radius: 50%;
+        background: #4b9200;
+        border: 1px solid #4b9200;
+    }
+}
+#once:checked ~ .payment_block .payment_circle2 {
+    border: 1px solid #4b9200;
+    .payment_circle_inner {
+        display: block;
+        width: 16px;
+        height: 16px;
+        background-color: #fe9013;
+        border-radius: 50%;
+        background: #4b9200;
+        border: 1px solid #4b9200;
+    }
+}
+.donate_btn {
+    position: relative;
+    left: 3px;
+}
+.share {
+    margin-top: 30px;
+    font-family: "Roboto-400";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #333b41;
+}
+@media (max-width: 1599px) {
+    .donate {
+        height: auto;
+        padding: 40px 30px 30px 31px;
+    }
+    .progress_bar {
+        min-width: 810px;
+        min-height: 27px;
+        padding: 13px 0 12px 0;
+    }
+    .progress_bar_line {
+        min-width: 790px;
+        width: 97.53%;
+    }
+    .progress_bar_circle:nth-child(1) {
+        display: none;
+    }
+
+    .progress_bar_circle:nth-child(n + 1) {
+        .price {
+            top: -9px;
+            left: -11px;
+        }
+    }
+    .progress_bar_circle:nth-child(n + 7) {
+        .price {
+            top: -9px;
+            left: -19px;
+        }
+    }
+    .donate__head_image {
+        height: 390px;
+        background-position: left -173px top -194px;
+        background-repeat: no-repeat;
+        background-size: 160%;
+    }
+    .donate__title {
+        margin-right: 162px;
+        margin-bottom: 30px;
+    }
+    .donate__information {
+        margin-bottom: 40px;
+    }
+    .instruction {
+        height: auto;
+        padding: 20px 44px 45px 47px;
+    }
+    .instruction__title {
+        left: -9px;
+        top: -1px;
+    }
+    .instruction__subtitle {
+        margin-top: 11px;
+    }
+    .shema {
+        position: relative;
+        left: 2px;
+    }
+    .another__amount {
+        position: relative;
+        // left: -2px;
+    }
+
+    .progress_bar {
+        position: relative;
+        left: -2px;
+    }
+    .pay {
+        left: -9px;
+    }
+    .donate_btn {
+        left: 0px;
+        top: -1px;
+    }
+    .donate__amount {
+        margin-left: 18px;
+    }
+    .donate__footer {
+        padding: 40px 31px 50px 31px;
+    }
+    .donate__footer_nav {
+        margin-left: 187px;
+    }
+    .donate__subscribe {
+        right: 63px;
+    }
+    .crazy_text {
+        position: relative;
+        left: 1px;
+    }
+}
+@media (max-width: 999px) {
+    .donate {
+        height: auto;
+        padding: 30px 20px 45px 20px;
+    }
+    .progress_bar {
+        min-width: 600px;
+        width: 100%;
+        padding: 13px 0 12px 0;
+    }
+    .progress_bar_line {
+        min-width: 529px;
+        width: 88.1666%;
+    }
+    .progress_bar_circle:nth-child(1) {
+        display: none;
+    }
+    .progress_bar_circle:nth-child(2) {
+        display: none;
+    }
+    .progress_bar_circle:nth-child(3) {
+        display: none;
+    }
+    .progress_bar_circle:nth-child(n + 1) {
+        .price {
+            left: -18px;
+        }
+    }
+    .progress_bar_circle:nth-child(n + 7) {
+        .price {
+            left: -25px;
+        }
+    }
+    .donate__head_image {
+        height: 335px;
+        background-position: -273px -166px;
+        background-repeat: no-repeat;
+        background-size: 214.53125%;
+    }
+    .donate__title {
+        font-size: 24px;
+        line-height: 120%;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .donate__information {
+        margin-top: 30px;
+        margin-bottom: 27px;
+    }
+    .instruction {
+        padding: 30px 0px 31px 0px;
+    }
+    .instruction__title {
+        left: 0;
+    }
+    .instruction__subtitle {
+        margin-top: 22px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    .shema {
+        left: 4px;
+        top: -1px;
+    }
+    .another__amount__container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    .another__amount {
+        padding-left: 6px;
+        left: 0px;
+        height: 42px;
+        width: 180px;
+    }
+    .another__amount__dollar {
+        bottom: 11px;
+        right: 70px;
+    }
+    .progress_bar {
+        left: 0px;
+    }
+    .pay {
+        left: -10px;
+        margin-top: 31px;
+        margin-bottom: 29px;
+    }
+    .donate__amount {
+        margin-top: 40px;
+        margin-left: 10px;
+        margin-bottom: 7px;
+    }
+    .donate__footer {
+        padding: 12px 20px 12px 20px;
+    }
+    .donate__footer_nav {
+        margin-left: -3px;
+        column-gap: 29px;
+    }
+    .donate__subscribe {
+        display: none;
+    }
+    .social {
+        position: absolute;
+        right: 8px;
+        top: 12px;
+        row-gap: 20px;
+    }
+    .link__text {
+        display: none;
+    }
+    .crazy_text {
+        position: relative;
+        left: 0px;
+        top: -2px;
+    }
+}
+@media (max-width: 639px) {
+    .donate {
+        padding: 30px 10px 21px 10px;
+    }
+    //----------------------
+    .donate__head_image {
+        height: 187px;
+        background-position: -150px -93px;
+        background-repeat: no-repeat;
+        background-size: 239.50625%;
+    }
+    //-----------------
+    .progress_bar {
+        min-width: 93.75%;
+        min-height: 13.5px;
+        padding: 6px 0 6.5px 0;
+    }
+    .progress_bar_line {
+        min-width: 82.8125%;
+        height: 1px;
+    }
+    .bar_circle_outher {
+        width: 5px;
+        height: 5px;
+    }
+    .bar_circle_outher1 {
+        width: 20px;
+        height: 20px;
+    }
+    .bar_circle_outher2 {
+        height: 11.476997375488281px;
+        width: 11.476997375488281px;
+    }
+    //-----------
+    .price {
+        font-size: 13px;
+    }
+    .progress_bar_circle {
+        cursor: pointer;
+        width: 10px;
+        height: 10px;
+        position: relative;
+        z-index: 3;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:nth-child(n + 4) {
+            .price {
+                top: -32px;
+                left: -24px;
+            }
+        }
+        &:nth-child(n + 7) {
+            .price {
+                top: -32px;
+                left: -23px;
+            }
+        }
+    }
+    .another__amount {
+        margin-top: 49px;
+    }
+    .pay {
+        margin-top: 23px;
+    }
+    .dollar_icon {
+        height: 10px;
+        width: 5px;
+    }
+    .donate__footer {
+        padding: 20px 9px 20px 9px;
+    }
+    .links {
+        flex-direction: column;
+        align-items: center;
+    }
+    .designed {
+        order: -2;
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+    .social {
+        flex-direction: row;
+        top: 73px;
+        right: 63px;
+        column-gap: 30px;
+    }
+    .icon_bg_gray {
+        margin-right: auto;
+    }
+    .donate__information {
+        font-size: 24px;
+        line-height: 120%;
+        margin-top: 27px;
+        margin-bottom: 28px;
+    }
+
+    .instruction {
+        padding: 21px 0px 18px 0px;
+    }
+    .instruction__title {
+        font-size: 24px;
+        line-height: 120%;
+    }
+    .instruction__subtitle {
+        font-size: 16px;
+        line-height: 140%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .amount {
+        font-size: 40.6015px;
+        line-height: 80%;
+    }
+    .diet {
+        row-gap: 6.2px;
+        top: 15px;
+        left: -25px;
+    }
+    .muliply {
+        top: 8px;
+        left: -19px;
+    }
+    .diet_text {
+        font-size: 9.02255px;
+        line-height: 140%;
+        position: relative;
+        top: 1px;
+    }
+    .muliply {
+        height: 7.8947296142578125px;
+        width: 7.8947296142578125px;
+        margin: 0;
+    }
+    .widget {
+        width: 160.15px;
+        height: 138.72px;
+        position: relative;
+        left: 17px;
+    }
+    .donate__amount {
+        margin-top: 4px;
+        margin-left: 0px;
+        margin-bottom: 8px;
+        position: relative;
+        top: -1px;
+    }
+    .share {
+        white-space: nowrap;
+    }
+    .donate_btn {
+        height: 54px;
+        width: 298px;
+    }
+    .donate__footer .footer__btn {
+        margin-top: 86px;
+        margin-bottom: 30px;
+    }
+    .donate__footer_nav {
+        column-gap: 22px;
+        margin-left: 0;
+    }
+    .footer .logo {
+        border: none;
+        margin-right: 0;
+        width: auto;
+    }
+    .footer .bamboo {
+        left: 159px;
+        left: 49.6875vw;
+        right: auto;
+        bottom: auto;
+        top: -2px;
+    }
+}

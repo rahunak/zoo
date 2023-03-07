@@ -1,0 +1,68 @@
+.shown1 {
+    animation-name: show1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.shown2 {
+    animation-name: show2;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.hidden1 {
+    animation-name: hide1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.hidden2 {
+    animation-name: hide2;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes show1 {
+    0% {
+        width: 10px;
+        height: 10px;
+    }
+    100% {
+        width: 40px;
+        height: 40px;
+    }
+}
+@keyframes show2 {
+    0% {
+        width: 10px;
+        height: 10px;
+    }
+    100% {
+        width: 20.95px;
+        height: 20.95px;
+    }
+}
+
+@keyframes hide1 {
+    0% {
+        width: 40px;
+        height: 40px;
+    }
+    100% {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+@keyframes hide2 {
+    0% {
+        width: 20.95px;
+        height: 20.95px;
+    }
+    100% {
+        width: 10px;
+        height: 10px;
+    }
+}

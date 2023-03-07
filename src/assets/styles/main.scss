@@ -1,0 +1,124 @@
+@import "./colors.scss";
+
+.main {
+    height: 700px;
+    position: relative;
+    background-image: url(../images/Giant\ Panda.png);
+
+    background-position: top -80px center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.head__content {
+    position: absolute;
+    bottom: 100px;
+    right: 219.69px;
+    width: 500.31px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 60px;
+}
+.head__title {
+    font-family: "Roboto-700";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 106.496px;
+    line-height: 75%;
+    /* or 80px */
+
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    color: #ffffff;
+}
+.head__circle {
+    position: absolute;
+    width: 465px;
+    height: 465px;
+    left: -73px;
+    top: -74px;
+    border-radius: 50%;
+    z-index: 0;
+    background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+}
+@media (max-width: 1599px) {
+    .main {
+        height: 504px;
+        background-size: 119.8%;
+    }
+    .head__circle {
+        height: 367px;
+        width: 367px;
+        left: -58px;
+        top: -53.8px;
+    }
+    .head__title {
+        font-size: 85px;
+    }
+    .head__content {
+        width: 400.25px;
+        right: 85.75px;
+        bottom: 47px;
+        row-gap: 40.2px;
+    }
+}
+@media (max-width: 999px) {
+    .main {
+        height: 339px;
+        background-position: top -35px center;
+        background-size: 119.8%;
+    }
+    .head__content {
+        width: 255.64px;
+        height: 204.38px;
+        top: 49px;
+        right: 16px;
+    }
+    .head__circle {
+        width: 237.6px;
+        height: 237.6px;
+        left: -37.5px;
+        top: -39.5px;
+    }
+    .head__title {
+        font-size: 54.2894px;
+        line-height: 75%;
+    }
+    .main_btn {
+        position: absolute;
+        bottom: -46px;
+        left: -348px;
+    }
+}
+
+@media (max-width: 639px) {
+    .main {
+        background-position: top 0px center;
+        height: 186.96px;
+    }
+    .head__content {
+        width: 128.13px;
+        height: 102.44px;
+        right: 10px;
+        top: 41px;
+    }
+    .head__circle {
+        width: 119.09px;
+        height: 119.09px;
+        left: -19px;
+        top: -19px;
+    }
+    .head__title {
+        font-size: 28px;
+        line-height: 75%;
+    }
+    .main_btn {
+        left: auto;
+        right: 1px;
+        bottom: -118px;
+    }
+}

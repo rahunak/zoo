@@ -1,0 +1,122 @@
+.showModal_animation {
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    -webkit-animation-name: showModal; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+    animation-name: showModal;
+}
+.hideModal_animation {
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    -webkit-animation-name: hideModal; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+    animation-name: hideModal;
+}
+@keyframes showModal {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes hideModal {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+.cross {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.4);
+        transition: all 0.4s ease-in-out;
+    }
+}
+%cross_line {
+    display: block;
+    width: 17px;
+    height: 3px;
+    position: absolute;
+    border-radius: 20px;
+
+    background: linear-gradient(
+            315.75deg,
+            rgba(254, 210, 144, 0.7) 30.06%,
+            #febdab 100.95%,
+            rgba(254, 210, 144, 0.7) 106.36%
+        ),
+        linear-gradient(
+            315.75deg,
+            rgba(254, 189, 171, 0.74) 30.06%,
+            rgba(243, 169, 248, 0.66) 50.74%,
+            #e0d8f0 80.49%,
+            #eaf7fe 127.9%,
+            #eaf7fe 149.54%
+        ),
+        linear-gradient(
+            315.75deg,
+            rgba(254, 189, 171, 0.74) 30.06%,
+            rgba(243, 169, 248, 0.66) 50.74%,
+            #e0d8f0 80.49%,
+            #eaf7fe 127.9%,
+            #eaf7fe 149.54%
+        );
+}
+.cross_line1 {
+    @extend %cross_line;
+    transform: rotate(45deg);
+}
+.cross_line2 {
+    @extend %cross_line;
+    transform: rotate(-45deg);
+}
+.modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 994;
+    background: rgba(41, 41, 41, 0.692); //Прозрачность
+    backdrop-filter: blur(6px); //Блюрим задний фон
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    // margin: 25px;
+    .testimonial_card {
+        height: auto;
+        max-height: 90vh;
+    }
+    .testimonial_card__wrapper {
+        height: auto;
+    }
+
+    @media (max-width: 999px) {
+        .testimonial__description {
+            height: auto;
+        }
+        .testimonial_card__wrapper {
+            width: 263px;
+        }
+        .testimonial_card {
+            min-width: 267px;
+            width: 267px;
+        }
+    }
+}

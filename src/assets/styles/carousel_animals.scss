@@ -1,0 +1,41 @@
+.nextLeftSlider {
+    position: absolute;
+    top: 0;
+    left: 100vw;
+}
+.nextRightSlider {
+    position: absolute;
+    left: -100vw;
+    top: 0;
+}
+.toLeft {
+    animation-name: toLeft;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.toRight {
+    animation-name: toRight;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes toLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100vw);
+    }
+}
+
+@keyframes toRight {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100vw);
+    }
+}
